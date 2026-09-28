@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name</title>
+  <meta name="description" content="Your Name – Economist. Research, publications, teaching and contact.">
+  <!--
+    HOW TO EDIT
+    - Replace everything in [square brackets] / "Your Name" placeholders.
+    - Put your CV at files/cv.pdf and your photo at images/avatar.jpg.
+    - To add a paper: copy one <article class="paper"> block and edit it.
+    - No external fonts, scripts or trackers are loaded (keeps the privacy policy short).
+  -->
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #5b6470;
+      --accent: #003056;
+      --accent-soft: #e8eef4;
+      --line: #e3e6ea;
+      --max: 820px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14171b;
+        --text: #e6e8eb;
+        --muted: #9aa3ad;
+        --accent: #7fb0e0;
+        --accent-soft: #1e2833;
+        --line: #2a3038;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navigation */
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+    }
+    nav .inner {
+      max-width: var(--max); margin: 0 auto; padding: 12px 16px;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px;
+    }
+    nav .brand { font-weight: 700; color: var(--text); margin-right: auto; }
+    nav a.link { color: var(--muted); font-size: 15px; }
+    nav a.link:hover { color: var(--accent); text-decoration: none; }
+
+    main { max-width: var(--max); margin: 0 auto; padding: 0 16px 48px; }
+
+    /* Header / about */
+    .hero {
+      display: flex; gap: 32px; align-items: flex-start;
+      padding: 48px 0 16px;
+    }
+    .hero img {
+      width: 160px; height: 160px; border-radius: 50%;
+      object-fit: cover; flex-shrink: 0; background: var(--accent-soft);
+    }
+    .hero h1 { margin: 0; font-size: 32px; line-height: 1.2; }
+    .hero .role { margin: 6px 0 0; color: var(--muted); }
+    .icons { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 14px; font-size: 15px; }
+    @media (max-width: 600px) {
+      .hero { flex-direction: column; align-items: center; text-align: center; }
+      .icons { justify-content: center; }
+    }
+
+    /* Sections */
+    section { padding-top: 32px; }
+    h2 {
+      font-size: 24px; margin: 0 0 16px; padding-bottom: 6px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+    h3 { font-size: 16px; color: var(--muted); margin: 24px 0 8px; text-transform: uppercase; letter-spacing: .04em; }
+
+    /* Papers */
+    .paper { margin: 0 0 28px; }
+    .paper .title { font-weight: 700; font-size: 18px; margin: 0; }
+    .paper .meta { margin: 2px 0; color: var(--muted); }
+    .paper .award { font-style: italic; margin: 2px 0; }
+    .paper details { margin: 6px 0; }
+    .paper summary { cursor: pointer; color: var(--muted); font-size: 15px; }
+    .paper details p { margin: 6px 0 0; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .buttons a {
+      font-size: 14px; padding: 3px 10px;
+      border: 1px solid var(--accent); border-radius: 4px;
+    }
+    .buttons a:hover { background: var(--accent); color: var(--bg); text-decoration: none; }
+
+    ul.plain { padding-left: 20px; margin: 4px 0; }
+    .entry { margin-bottom: 14px; }
+    .entry .sub { color: var(--muted); }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 14px;
+      max-width: var(--max); margin: 0 auto; padding: 20px 16px 40px;
+    }
+    footer details { margin-top: 10px; }
+    footer summary { cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="brand" href="#top">Your Name</a>
+    <a class="link" href="files/cv.pdf">CV</a>
+    <a class="link" href="#publications">Publications</a>
+    <a class="link" href="#workingpapers">Working Papers</a>
+    <a class="link" href="#teaching">Teaching</a>
+    <a class="link" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ABOUT -->
+  <div class="hero">
+    <img src="images/avatar.jpg" alt="Portrait of Your Name">
+    <div>
+      <h1>Your Name</h1>
+      <p class="role">[PhD Candidate in Economics]<br>
+        <a href="https://example.org">[University / Institute]</a></p>
+      <div class="icons">
+        <a href="mailto:you@example.org">Email</a>
+        <a href="files/cv.pdf">CV</a>
+        <a href="https://scholar.google.com/">Google Scholar</a>
+        <a href="https://orcid.org/">ORCID</a>
+        <a href="https://github.com/yourusername">GitHub</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <p>I am a [PhD candidate / postdoc] in economics at [institution]. My research interests
+      are [field 1], [field 2] and [field 3]. In particular, I study [one-sentence description
+      of your research agenda].</p>
+    <p>You can download my CV <a href="files/cv.pdf">here</a>.</p>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <article class="paper">
+      <p class="title">[Title of Published Paper]</p>
+      <p class="meta">with <a href="https://example.org">[Coauthor]</a></p>
+      <p class="meta"><strong><em>[Journal Name]</em></strong> ([Year])</p>
+      <details>
+        <summary>Abstract</summary>
+        <p>[Paste the abstract here.]</p>
+      </details>
+      <div class="buttons">
+        <a href="https://doi.org/">Journal</a>
+        <a href="files/paper1.pdf">Ungated PDF</a>
+        <a href="https://example.org">Replication Package</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- WORKING PAPERS -->
+  <section id="workingpapers">
+    <h2>Working Papers</h2>
+
+    <article class="paper">
+      <p class="title">[Title of Job Market Paper]</p>
+      <p class="meta"><strong>Job Market Paper</strong></p>
+      <p class="award">[Award name, year — optional]</p>
+      <details>
+        <summary>Abstract</summary>
+        <p>[Paste the abstract here.]</p>
+      </details>
+      <div class="buttons">
+        <a href="files/jmp.pdf">Download</a>
+      </div>
+    </article>
+
+    <article class="paper">
+      <p class="title">[Title of Working Paper]</p>
+      <p class="meta">with <a href="https://example.org">[Coauthor]</a></p>
+      <details>
+        <summary>Abstract</summary>
+        <p>[Paste the abstract here.]</p>
+      </details>
+      <div class="buttons">
+        <a href="https://example.org">Discussion Paper</a>
+      </div>
+    </article>
+
+    <h3>Work in Progress</h3>
+    <ul class="plain">
+      <li><strong>[Project title]</strong> (with [Coauthor]) — [status, e.g. data collection]</li>
+    </ul>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <div class="entry">
+      <strong>[Course name], [BA/MA], [University]</strong><br>
+      <span class="sub">[Teaching Assistant], [Semester Year]</span>
+    </div>
+    <div class="entry">
+      <strong>[Course name], [BA/MA], [University]</strong><br>
+      <span class="sub">[Teaching Assistant], [Semester Year]</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:you@example.org">you [at] example.org</a><br>
+      [Department / Institute]<br>
+      [Street and number]<br>
+      [Postcode City]
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  © <span id="year">2026</span> Your Name · Built with plain HTML, hosted on GitHub Pages.
+
+  <!-- Impressum / Datenschutz: adapt to your situation (check requirements for Germany). -->
+  <details id="impressum">
+    <summary>Impressum &amp; Datenschutz</summary>
+    <p><strong>Angaben gemäß § 5 DDG</strong><br>
+      [Vorname Nachname]<br>
+      [Straße Nr.]<br>
+      [PLZ Ort]<br>
+      E-Mail: [you@example.org]</p>
+    <p><strong>Datenschutz</strong><br>
+      Diese Website verwendet keine Cookies, keine Tracking- oder Analysedienste und lädt keine
+      externen Schriftarten. Die Seite wird über GitHub Pages (GitHub Inc.) bereitgestellt; dabei
+      verarbeitet GitHub technisch notwendige Zugriffsdaten (z.&nbsp;B. IP-Adresse) zur Auslieferung
+      der Seite. Weitere Informationen:
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+  </details>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
